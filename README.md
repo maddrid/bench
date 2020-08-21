@@ -31,8 +31,9 @@ Bench::printTimers();
 Bench::getTimers();
 Bench::getTimers(null);
 Bench::getTimers(true);
-Bench::getTimers(null,5);
-Bench::getTimers(true,5);
+// 4 is the decimal precision
+Bench::getTimers(null,4);
+Bench::getTimers(true,9);
 ``` 
 ``` 
  ### Stop the timer 
