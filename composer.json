@@ -1,0 +1,12 @@
+{
+    "name": "web-media/bench",
+    "description": "Benchmark class to measure the amount of time , memory   that elapses between two or more points.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Web-Media",
+            "email": "we_b_media@yahoo.com"
+        }
+    ],
+    "require": {}
+}
