@@ -1,7 +1,7 @@
 ### Bench
-Simple class to ( benchmark / profile ) the amount of time , memory (server load)  that elapses between two points.
+( Benchmarking / Profiling / Timing ) class to measure the amount of time , memory (server load)  that elapses between two  (or more) points.
 
-###Usage
+### Usage
 
 As Simple as Possible
 ```
