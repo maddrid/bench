@@ -22,7 +22,7 @@ Bench::stop('first_point');
 //more details
 Bench::printTimers(true);
 keep it simple
-Bench::printTimers(false);
+Bench::printTimers();
 ``` 
  ### Get timers 
 
