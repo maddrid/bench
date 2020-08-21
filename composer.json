@@ -1,12 +1,22 @@
 {
-    "name": "web-media/bench",
-    "description": "Benchmark class to measure the amount of time , memory   that elapses between two or more points.",
-    "license": "MIT",
+    "name": "maddrid/bench",
+    "description": "( Benchmarking/Profiling ) utility class to measure the amount of time , memory  (server load)  that elapses between two or more points.",
+    "type": "library",
+    "keywords": ["benchmarking", "profiling", "timing"],
+	"license": "MIT",
+	"support": {
+        "issues": "https://github.com/maddrid/bench/issues"
+    },
     "authors": [
         {
             "name": "Web-Media",
-            "email": "we_b_media@yahoo.com"
+            
         }
     ],
-    "require": {}
+    "require": {
+	 
+	 },
+	 "autoload": {
+         "classmap": ["Bench.php"]
+    }
 }
