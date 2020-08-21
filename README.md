@@ -17,11 +17,12 @@ Bench::stop('first_point');
  
 ``` 
  ### Display 
-
+more details
 ```
-//more details
 Bench::printTimers(true);
+```
 keep it simple
+```
 Bench::printTimers();
 ``` 
  ### Get timers 
@@ -38,7 +39,9 @@ Bench::getTimers(true,5);
 
 ```
 Bench::stop('first_point');
+```
 // will get server  load
+```
 Bench::stop('first_point',true);
 
 ``` 
