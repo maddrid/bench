@@ -1,9 +1,7 @@
-# Bench
-Simple class to measure the amount of time , memory   that elapses between two points.
-Bench
+### Bench
+Simple class to ( benchmark / profile ) the amount of time , memory (server load)  that elapses between two points.
 
-Benchmark class to measure the amount of time , memory that elapses between two or more checkpoints.
-Usage
+###Usage
 
 As Simple as Possible
 ```
