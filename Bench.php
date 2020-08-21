@@ -56,7 +56,7 @@ class Bench
      *
      * @return Timer
      */
-    public static function stop($name ,$cpu = false)
+    public static function stop($name, $cpu = false)
     {
         $name = strtolower($name);
 
@@ -67,17 +67,17 @@ class Bench
         self::$timers[$name]['end'] = microtime(true);
         self::$timers[$name]['end_memory'] = memory_get_usage();
         self::$timers[$name]['peek'] = memory_get_peak_usage();
-if($cpu ){
-          $cpuLoad = self::getServerLoad();
-          if (is_null($cpuLoad)) {
-          $cpuLoad =  "CPU load not estimateable (maybe too old Windows or missing rights at Linux or Windows)";
-          }else {
-          $cpuLoad=$cpuLoad . "%";
-          }
-          self::$timers[$name]['cpu_load'] =$cpuLoad;
-}else {
-	 self::$timers[$name]['cpu_load'] = 'Not enabled';
-}
+        if ($cpu) {
+            $cpuLoad = self::getServerLoad();
+            if (is_null($cpuLoad)) {
+                $cpuLoad = "CPU load not estimateable (maybe too old Windows or missing rights at Linux or Windows)";
+            } else {
+                $cpuLoad = $cpuLoad . "%";
+            }
+            self::$timers[$name]['cpu_load'] = $cpuLoad;
+        } else {
+            self::$timers[$name]['cpu_load'] = 'Not enabled';
+        }
     }
 
     //--------------------------------------------------------------------
@@ -129,6 +129,10 @@ if($cpu ){
         $timers = self::$timers;
 
         foreach ($timers as &$timer) {
+            if (!isset($timer['peek'])) {
+                $timer['peek'] = memory_get_peak_usage();
+                $timer['info'] = 'Memory peek usage not accurate . Timer not stopped before output';
+            }
             if (empty($timer['end'])) {
                 $timer['end'] = microtime(true);
             }
