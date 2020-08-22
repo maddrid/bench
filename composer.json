@@ -9,8 +9,12 @@
             "email": "we_b_media@yahoo.com"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {},
-	"autoload": {
-         "classmap": ["Bench.php"]
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
     }
 }
