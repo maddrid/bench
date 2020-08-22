@@ -2,6 +2,9 @@
     "name": "maddrid/bench",
     "description": "( Benchmarking/Profiling ) utility class to measure the amount of time , memory  (server load)  that elapses between two or more points.",
     "type": "library",
+    "keywords": [
+        "benchmarking", "profiling", "timing"
+    ],
     "license": "GPL-3.0-or-later",
     "authors": [
         {
