@@ -1,5 +1,5 @@
 <?php
- namespace maddrid;
+ namespace Maddrid;
 /**
  * Class Bench
  *
