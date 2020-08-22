@@ -4,7 +4,7 @@
 ## Usage
 
 As Simple as Possible
-```
+```php
 Bench::start('first_point');
   do_some_math
     Bench::start('second_point');
@@ -14,7 +14,7 @@ Bench::start('first_point');
       do_more_math
     Bench::stop('third_point');
 Bench::stop('first_point');
- ```
+ ```php
 
 ## Display
 
