@@ -1,7 +1,7 @@
-### Bench
+# Bench
 ( Benchmarking / Profiling / Timing ) class to measure the amount of time , memory (server load)  that elapses between two  (or more) points.
 
-### Usage
+## Usage
 
 As Simple as Possible
 ```
@@ -16,7 +16,7 @@ Bench::start('first_point');
 Bench::stop('first_point');
  ```
 
-### Display
+## Display
 
 //more details
 ```
@@ -26,7 +26,7 @@ keep it simple
 ```
 Bench::printTimers();
 ```
-### Get timers
+## Get timers
 ```
 Bench::getTimers();
 Bench::getTimers(null);
@@ -34,7 +34,7 @@ Bench::getTimers(true);
 Bench::getTimers(null,5);
 Bench::getTimers(true,5);
 ```
- ### Stop the timer 
+## Stop the timer 
 ```
 Bench::stop('first_point'); 
 ```
