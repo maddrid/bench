@@ -54,4 +54,4 @@ When getting server load
 ```php
 Bench::stop('first_point',true);
 ```
- Will add aditional 2 seconds on the checkpoint . If  checkpoint is nested , "the Parent/s " checkpoints will inherit those 2 seconds .
+ Will add aditional  seconds on the checkpoint . If  checkpoint is nested , "the Parent/s " checkpoints will inherit those  seconds .
